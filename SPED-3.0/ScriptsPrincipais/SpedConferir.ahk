@@ -16,20 +16,57 @@ GroupAdd, SPED, Pesquisar Dados Cadastrais
 SetTitleMatchMode 2
 
 ;Imagens de referencias para clicks
-Lupa:="|<Lupa>*220$17.3k0Ds0kM30sC1kTDUzzVzy1zg30s3Xs3zs1Xs03s02s03k03E"
+Lupa:="|<Lupa>*210$18.0000z031k40M80A8Q4Ey2Fr2FX2EQ2Ey29r49X4A0860E31U0y0000U"
 NFE:="|<NFE>*139$25.C2108200400031ncsl5YW4yWT1EF81g8a7XoFw"
 NumeroDoc:="|<NumeroDoc>*137$107.0400000000000000014000000U04000000838000001008000000E6GHyQtkCC1llmHyQxneYYZ94UYY4YYIYZ999J99/u919899899/uGGaGGI4G2GEGGEGGI4YZAYYd8Y4YUYYWYYd99+9t9CEk760sktt9CGNY"
 BaseCalcC100:="|<BaseCalcC100>*135$119.00000000200000000000w0000E000E040101C8Fl40000U000U080202mNYG8tss770stCGHUQQ50n87mGGEGG2+GWYd198+16Q8Xb7kYy43Z19G2GEI246F93819089+2GY4YUc5c2WGHG2GEFGIIZ8991NfG9swwQ3XUQwbD9UCA2SGXo"
 IconeAnalitico:="|<IconeAnalitico>*204$23.00000000000000000E001k103k20DU40P080r0E360U7y10Tw20kQ43UM860sEQ0kUk1l1U1W00040008000nzzzk"
 Item1Analitico:="|<Item1Analitico>*138$32.000000wyD7UE84N48222F20UUYEUD8948222S20UUY0E84N03m0sE000002"
 Relatorios:="|<Relatorios>*137$50.0000000000000U000y0E402008U41000028tCtndnkWGIYYWYYDbot98dC2F1GGG+EkWGIYYWYa8nZta8aD000000002"
-MensagemRelatorio:="|<MensagemRelatorio>*110$76.sQ00000000003lk0000000000D700000000000wwD6sS3kv7VivHlyTnwTbwz7zxj6NXA06MnAMnqgzqAy1tXTtXDSnzMlwTaBzaAwv61X0taMn0MnngRaAn6tzClXDAkwMlwTngS6Ak00000000k00000000001r000000000003s0008"
 OBS:="|<OBS>*142$104.000000000000000000w4180001000000200E20E0000E000000M08004000040000000020QD8wQ1lQstsLXbXUU8YGF8UWN8FN89U948294YG88YH7oGCECF20WF94W294912YY4YEE8YGF8UWN1MEl9V943lkwXlk77XXoASCSC000004000000001U000000300000000080000007U00000000A008"
 BaseCalcC170:="|<BaseCalcC170>*137$138.0000000000000000000000000000000100000000000000D0000400040100E0HW4Q1nw8U000400040100E0KHAW28E8XbXUQQ3XYt9C1lkI3AU20EDYYYUYY4IZ59G2GEI2As3UE8Xb7kYy43Z19G2GEI2460ME8YVY0YU44Z19G2GEI2o104E8YYoUYY4IZ59G2GEKOoW28ED7bXUQQ3bYttA1lUHmIS1sE00000000000000000000000U"
+PrimeiroItemG5:="|<PrimeiroItemG5>*111$10.00020A0s3kDUz3sD0s308000002"
+Klaus:="|<Klaus>*176$29.00000XE001AU002F00072SFCA44WEI8t4UYGG8l4gYEGBD7b00000E"
+Localizar:="|<Localizar>*184$19.0000001kC0U1Uk0EM088064037zzXbxlVgMkqADny3ky0004"
+NumNotaKlaus:="|<NumNotaKlaus>*195$36.000000000000000010000010C483VQPY86tyEY8492kY8A12kY8A12EYM412NaM6N2D3s3l2000000000000U"
+ChaveNFEG5:="|<ChaveNFEG5>*120$70.000000000000wU00049w01D4+0000MY0052E80001WE00I10gQWQ59072E438++8IbUW90E8bZDV+EPt410WWIU4N084E4++8W8FY0WV2D8bW712E1m3k000000000008"
+AbrirPDFChrome:="|<AbrirPDFChrome>*130$22.0000zwU3zn0DzC0zww3znsDzDkzw03zs0Dzzkzbz3yDwDszkzbz3yDwDszkz8D3w0QDVVkwTz3XzwCTzkzzz3zzwU"
+ItensG5:="|<ItensG5>*131$17.000E00Y01802NmYYK9DcGEEYWV4t0000000000003s0MA1DY4eY+ycfCdRzGjvZzz+zi+ysGfkHz0Nw0DU000001"
 C197:="|<C197>*162$35.000000Aw8xyUH8l88V42aMl2814l34E2Da68U438AFa8YEMVsFsUUU00011U0004000000U"
-C195:="|<C195>*162$35.000000Aw8wwUH8l90V42aO12814rX4E2DVa8U433AFa8YaMVsFtsUU00011U0004000000U"
-C170:="|<C170>*151$35.000000As9yMUH8k98V42UWF28114W4E26968U48GAFa8EYEVsEUkUU00011U0004000000U"
-C190:="|<C190>*154$33.As8sMVAX4YWF0daYG814oWF08yYO810YXFa8YYG7V73280000FU0004U"
+C195:="|<C195>*162$35.000000Aw8wwUH8l90V42aO12814rX4E2DVa8U433AFa8YaMVsFtsUU00011U0004000000U|<C195-2>*160$35.0000004s8swUH8l90V42W+12814rU4E2DU28U4214Fa8YUEVsFlsUU00010U0004000000U"
+C170:="|<C170>*151$35.000000As9yMUH8k98V42UWF28114W4E26968U48GAFa8EYEVsEUkUU00011U0004000000U|<C170-2>*159$35.0000004s8yMUH8k98V42UWF28114U4E26928U48G4Fa8EYEVsEUkUU00010U0004000000U"
+C190:="|<C190>*160$34.000000HUXVW2N6994F0cWYF40WOE4E2Dd2F084Y96MWGF4D2C6480000EE0002000000U|<C1902>*143$35.0000004s8sMUH8l98V42W+F2814oU4E2Dd28U42G4Fa8YYEVsFkkUU00011U0004000000U"
+
+;Funçoes
+ClickOnImage(image, xOffset, yOffset, mouseClick, label, ByRef X, ByRef Y) {
+    If (ok := FindText(X, Y, 572-150000, 549-150000, 572+150000, 549+150000, 0, 0, image)) {
+        FindText().Click(X + xOffset, Y + yOffset, mouseClick)
+        Return true
+    } Else {
+        MsgBox, 48, Aviso, %label% não encontrado.,1
+        Return false
+    }
+}
+
+ExistActivate(windowTitle) {
+    If WinExist(windowTitle) {
+        WinActivate
+        return true ; Window exists and is activated.
+    } Else {
+        MsgBox, 48, Aviso, Janela "%windowTitle%" inativa.,2
+        return false ; Window doesn't exist.
+    }
+}
+
+ActiveActivate(windowTitle) {
+    If WinActive(windowTitle) {
+        WinActivate
+        return true ; Window exists and is activated.
+    } Else {
+        MsgBox, 48, Aviso, Janela "%windowTitle%" inativa.,2
+        return false ; Window doesn't exist.
+    }
+}
 
 ;Variaveis
 FlagWASD := 0
@@ -58,7 +95,7 @@ FlagEstado := 0
 
 ;Ativa e desativa WASD
     +1::
-        if (FlagWASD == 0) {
+        If (FlagWASD == 0) {
             FlagWASD := 1 
             ToolTip, WASD ativado, 1115, 972
             SetTimer, RemoveToolTip, -3000
@@ -71,7 +108,7 @@ FlagEstado := 0
 
 ;Ativa e desativa flag de estado -> FlagEstado
     +F3::
-        if (FlagEstado == 0) {
+        If (FlagEstado == 0) {
             FlagEstado := 1 
             ToolTip, OBS fora do estado, 1115, 972
             SetTimer, RemoveToolTip, -3000
@@ -94,9 +131,9 @@ FlagEstado := 0
             Run Calc.exe
             WinWaitActive, ahk_exe Calc.exe
             If WinActive("Calculadora") {
-                MsgBox,48, Aviso, A Calculadora foi aberta.,1
+                MsgBox, 48, Aviso, A Calculadora foi aberta.,1
             } Else {
-                MsgBox,48, Aviso, A Calculadora não pôde ser aberta.,1
+                MsgBox, 48, Aviso, A Calculadora não pôde ser aberta.,1
             }
         }
     Return   
@@ -105,195 +142,161 @@ FlagEstado := 0
 ;Comandos que só funcionam dentro do SPED
 ;Pesquisa de nota
     NumpadSub::
-        if WinActive("REGISTRO - C100 - ENTRADA") {
-            if (ok:=FindText(X, Y, 567-150000, 429-150000, 567+150000, 429+150000, 0, 0, NumeroDoc)) {
-                FindText().Click(X+239, Y+0, "L")
-            }
-            Send,^c
-            if (ok:=FindText(X, Y, 572-150000, 549-150000, 572+150000, 549+150000, 0, 0, BaseCalcC100)) {
-                FindText().Click(X+239, Y, "L")
-            }
-            if WinExist("Microsoft​ Edge") {
-                WinActivate
-                Send,^f^v
-            } Else {
-                MsgBox, 48, Aviso, Edge não encontrado abra o mesmo para pesquisar essa nota.,2
+        If WinActive("REGISTRO - C100 - ENTRADA") {
+            if ClickOnImage(NumeroDoc, 239, 0, "L", "NumeroDoc", X, Y) {
+               Send,^c 
+               if ClickOnImage(BaseCalcC100, 239, 0, "L", "Base de Cálculo C100", X, Y) {
+                    If ExistActivate("REGISTRO - C100 - ENTRADA") {
+                    Send,^f^v
+                    }
+                }
             }
         } Else {
-            if (ok:=FindText(X, Y, 1469, 81, 1919, 406, 0, 0, Lupa)) {
-                FindText().Click(X, Y, "L")
+            if ClickOnImage(Lupa, -82, 37, "L", "Lupa", X, Y) {
+                Send, ^c
+                if ClickOnImage(NFE, 10, 20, "L", "NFE", X, Y) {
+                    if ClickOnImage(C190, 0, 0, "L", "C190", X, Y) {
+                        if ClickOnImage(Lupa, -200, 37, "L", "Lupa", X, Y) {
+                            Send, {PrintScreen}
+                        }
+                    }
+                }
             }
-            if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, NFE)) {
-                FindText().Click(X+10, Y+20, "L")
-            }
-            if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, C190)) {
-                FindText().Click(X, Y, "L")
-            }
-            if (ok:=FindText(X, Y, 1469, 81, 1919, 406, 0, 0, Lupa)) {
-                FindText().Click(X-200, Y, "L")
-            }
-            Send,{PrintScreen}    
+            FlagItens := 0
+            FlagWASD := 0
         }
-        FlagItens := 0
-        FlagWASD := 0
     Return
 
 ;Voltar do analitico para a Pesquisa
     NumpadAdd::
-        if WinActive("REGISTRO - C190 - ENTRADA - Analítico") {
+        If WinActive("REGISTRO - C190 - ENTRADA - Analítico") {
             Send,{Tab 5}
-        } else {
-            if (ok:=FindText(X, Y, 1469, 81, 1919, 406, 0, 0, Lupa)) {
-                FindText().Click(X-200, Y, "L")
-            }
+        } Else {
+            ClickOnImage(Lupa, -200, 37, "L", "Lupa", X, Y)
         }
     Return
 
 ;Pular 5 espaços analitico
     '::
-        if WinActive("REGISTRO - C190 - ENTRADA - Analítico") {
+        If WinActive("REGISTRO - C190 - ENTRADA - Analítico") {
             switch FlagAnalitico {
-                case 0:
+                Case 0:
                     Send,{Tab 5}
                     FlagAnalitico := 1
                 Return  
-                case 1:
+                Case 1:
                     Send,{Tab 5}
                     FlagAnalitico := 2
                 Return 
-                case 2:
+                Case 2:
                     Send,{Enter}!s
                     FlagAnalitico := 0
                 Return    
             }
-        } else {
+        } Else {
             Send,{tab 5}
         }  
     Return
 
 ;Completar espaço zerado
     \::
-    Send,0{Enter}0{Enter}0{Enter}0
+        Send,0{Enter}0{Enter}0{Enter}0
     Return
 
 ;Guardar tela no paint
     PgDn::
         Send,{PrintScreen}{Sleep 20}
-            If WinExist("Paint") {
-                WinActivate
+            If ExistActivate("Paint") {
                 Send,^v{Sleep 20}{AltDown}{Tab}{AltUp}
             } Else {
                 Run, mspaint.exe
                 WinWaitActive, ahk_exe mspaint.exe
-                If WinActive("Paint") {
-                    MsgBox,48, Aviso, O Paint foi aberto para uso do comando.,1
-                } Else {
-                    MsgBox,48, Aviso, O Paint não pôde ser aberto.,1
-                }
+
+                If ActiveActivate("Paint") {
+                    MsgBox, 48, Aviso, O Paint foi aberto para uso do comando.,1
+                } 
             }    
     Return
 
 ;Recalcula Analitico
     ScrollLock::
-        If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-            if (ok:=FindText(X, Y, 303-150000, 373-150000, 303+150000, 373+150000, 0, 0, IconeAnalitico)) {
-                FindText().Click(X, Y, "L")
+        If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+            if ClickOnImage(IconeAnalitico, 0, 0, "L", "Icone Analitico", X, Y) {
+                Send, {Sleep 40}{Enter}{Enter}
+                if ClickOnImage(C190, 0, 0, "L", "C190", X, Y) {
+                    if ClickOnImage(Item1Analitico, 106, 20, "L", "Item 1 Analitico", X, Y) {
+                        FlagItens := 0
+                    }
+                }
             }
-            Send,{Sleep 40}{Enter}{Enter}{Sleep 40}
-            if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, C190)) {
-                FindText().Click(X, Y, "L")
-            }
-            if (ok:=FindText(X, Y, 362-150000, 493-150000, 362+150000, 493+150000, 0, 0, Item1Analitico)) {
-                FindText().Click(X+106, Y+20, "L")
-            }
-            FlagItens := 0 
-        } Else {
-            MsgBox,48, Aviso, Janela principal de correção inativa.,1
         }
     Return
 
 ;Combinas dois ultimos comandos
     PgDn & ScrollLock::
         Send,{PrintScreen}{Sleep 20}
-            If WinExist("Paint") {
-                WinActivate
-                Send,^v{Sleep 20}{AltDown}{Tab}{AltUp}
+
+        If WinExist("Paint") {
+            WinActivate
+            Send,^v{Sleep 20}{AltDown}{Tab}{AltUp}
+        } Else {
+            Run, mspaint.exe
+            WinWaitActive, ahk_exe mspaint.exe
+
+            If WinActive("Paint") {
+                MsgBox, 48, Aviso, O Paint foi aberto para uso do comando.,1
             } Else {
-                Run, mspaint.exe
-                WinWaitActive, ahk_exe mspaint.exe
-                If WinActive("Paint") {
-                    MsgBox,48, Aviso, O Paint foi aberto para uso do comando.,1
-                } Else {
-                    MsgBox,48, Aviso, O Paint não pôde ser aberto.,1
+                MsgBox, 48, Aviso, O Paint não pôde ser aberto.,1
+            }
+
+        }
+
+        If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+            if ClickOnImage(IconeAnalitico, 0, 0, "L", "Icone Analitico", X, Y) {
+                Send,{Sleep 40}{Enter}{Enter}
+                if ClickOnImage(C190, 0, 0, "L", "C190", X, Y) {
+                    if ClickOnImage(Item1Analitico, 106, 20, "L", "Item 1 Analitico", X, Y) {
+                        FlagItens := 0
+                    }
                 }
             }
-            If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-                if (ok:=FindText(X, Y, 303-150000, 373-150000, 303+150000, 373+150000, 0, 0, IconeAnalitico)) {
-                    FindText().Click(X, Y, "L")
-                }
-                Send,{Sleep 40}{Enter}{Enter}{Sleep 40}
-                if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, C190)) {
-                    FindText().Click(X, Y, "L")
-                }
-                if (ok:=FindText(X, Y, 362-150000, 493-150000, 362+150000, 493+150000, 0, 0, Item1Analitico)) {
-                    FindText().Click(X+106, Y+20, "L")
-                }
-                FlagItens := 0 
-            } Else {
-                MsgBox,48, Aviso, Janela principal de correção inativa.,1
-            }
+        }
     Return
 
 ;Volta para o analitico
     XButton1::
-        if (ok:=FindText(X, Y, 32-150000, 90-150000, 32+150000, 90+150000, 0, 0, Relatorios)) {
-            FindText().Click(X, Y, "L")
-        }
-        Send,{Sleep 10}
-        if (ok:=FindText(X, Y, 401-150000, 632-150000, 401+150000, 632+150000, 0, 0, MensagemRelatorio)) {
-            FindText().Click(X, Y, "L")
-        }
+        if ClickOnImage(Relatorios, 0, 0, "L", "Relatorios", X, Y) {
+            Send,{Sleep, 10}{Click, 611, 537}
+        }   
     Return
 
 ;Exclui Observação
     XButton2::
-        if (ok:=FindText(X, Y, 1469, 81, 1919, 406, 0, 0, Lupa)) {
-            FindText().Click(X, Y, "L")
-        }
-        if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, NFE)) {
-            FindText().Click(X+10, Y+20, "L")
-        }
-        if (ok:=FindText(X, Y, 550-150000, 423-150000, 550+150000, 423+150000, 0, 0, C195)) {
-            FindText().Click(X, Y, "L")
-        }
-        if (ok:=FindText(X, Y, 387-150000, 493-150000, 387+150000, 493+150000, 0, 0, OBS)) {
-            FindText().Click(X, Y+19, "L")
-        }
-        Send,+{Tab}{Enter 2}{Sleep 10}
-        if (ok:=FindText(X, Y, 1469, 81, 1919, 406, 0, 0, Lupa)) {
-            FindText().Click(X-200, Y, "L")
+        if ClickOnImage(Lupa, -82, 37, "L", "Lupa", X, Y) {
+            if ClickOnImage(NFE, 10, 20, "L", "NFE", X, Y) {
+                if ClickOnImage(C195, 0, 0, "L", "C195", X, Y) {
+                    if ClickOnImage(OBS, 0, 19, "L", "OBS", X, Y) {
+                        Send, +{Tab}{Enter 2}{Sleep 10}
+                        ClickOnImage(Lupa, -200, 37, "L", "Lupa", X, Y)
+                    }
+                }
+            }
         }
     Return
 
 ;Ir para Itens a partir da pesquisa
     F1::
         If (FlagItens == 0) {
-            If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-                if (ok:=FindText(X, Y, 288-150000, 423-150000, 288+150000, 423+150000, 0, 0, C170)) {
-                    FindText().Click(X, Y, "L")
-                    FindText().Click(X+30, Y+90, "L")
-                }       
-            } Else {
-                MsgBox,48, Aviso, Janela principal de correção inativa.,1
+            If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+                if ClickOnImage(C170, 0, 0, "L", "C170", X, Y) {
+                    FindText().Click(X + 30, Y + 90, "L")
+                }
             }
         } Else {
-            If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-                if (ok:=FindText(X, Y, 288-150000, 423-150000, 288+150000, 423+150000, 0, 0, C170)) {
-                    FindText().Click(X, Y, "L")
-                    FindText().Click(X+540, Y+64, "L")
+            If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+                if ClickOnImage(C170, 0, 0, "L", "C170", X, Y) {
+                    FindText().Click(X + 20, Y + 145, "L")  
                 }
-            } Else {
-                MsgBox,48, Aviso, Janela principal de correção inativa.,1
             }
         }
     Return
@@ -301,70 +304,64 @@ FlagEstado := 0
 ;Ir para itens e filtrar por CST
     F1 & F2::
         If (FlagItens == 0){
-            If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-                if (ok:=FindText(X, Y, 288-150000, 423-150000, 288+150000, 423+150000, 0, 0, C170)) {
-                    FindText().Click(X, Y, "L")
-                    FindText().Click(X-13, Y+31, "L")
-                    FindText().Click(X+3, Y+69, "L")
+            If ActiveActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+                if ClickOnImage(C170, 0, 0, "L", "C170", X, Y) {
+                    Send, {Sleep 10}
+                    if ClickOnImage(YourNextImage, -13, 31, "L", "YourNextImage", X, Y) {
+                        Send, {Sleep 10}
+                        if ClickOnImage(AnotherImage, 3, 69, "L", "AnotherImage", X, Y) {
+                            Send, {PgUp}{Down 8}{Enter}
+                            FlagItens := 1
+                        }
+                    }
                 }
-                Send,{PgUp}{Down 8}{Enter}
-            } Else {
-                MsgBox,48, Aviso, Janela principal de correção inativa.,1
             }
-            FlagItens := 1  
         } Else {
-            If WinActive("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
-                if (ok:=FindText(X, Y, 288-150000, 423-150000, 288+150000, 423+150000, 0, 0, C170)) {
-                    FindText().Click(X, Y, "L")
-                    FindText().Click(X+30, Y+90, "L")
-                }
-            } Else {
-                MsgBox,48, Aviso, Janela principal de correção inativa.,1
+            If ActiveActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital") {
+                if ClickOnImage(C170, 0, 0, "L", "C170", X, Y) {
+                    FindText().Click(X + 540, Y + 64, "L")
+                }  
             }
         }
     Return
 
 ;Ir para Analitico pós validaçao
     F2::
-        if (ok:=FindText(X, Y, 0, 0, 1919, 1079, 0, 0, C190)) {
-            FindText().Click(X, Y, "L")
-            FindText().Click(X, Y+90, "L")
+        If ClickOnImage(C190, 0, 0, "L", "C190", X, Y) {
+            FindText().Click(X, Y + 90, "L")
         }
     Return
 
 ;Ir para Obs e alterar codigo da observação.
     F3::
-        if (FlagEstado == 0) {
-            if (ok:=FindText(X, Y, 550-150000, 423-150000, 550+150000, 423+150000, 0, 0, C195)) {
-                FindText().Click(X, Y, "L")
+        If (FlagEstado == 0) {
+            if ClickOnImage(C195, 0, 0, "L", "C195", X, Y) {
                 FindText().Click(X, Y+90, "L")
+                Send,{Click 2}{Sleep 20}0{Enter}OBSERVACAO PARA CFOP 1403{Enter 5}
             }
-            Send,{Click 2}{Sleep 20}0{Enter}OBSERVACAO PARA CFOP 1403{Enter 5}
         } Else {
-            if (ok:=FindText(X, Y, 550-150000, 423-150000, 550+150000, 423+150000, 0, 0, C195)) {
-                FindText().Click(X, Y, "L")
+            if ClickOnImage(C195, 0, 0, "L", "C195", X, Y) {
                 FindText().Click(X, Y+90, "L")
+                Send,{Click 2}{Sleep 20}0{Enter}OBSERVACAO PARA CFOP 2403{Enter 5}
             }
-            Send,{Click 2}{Sleep 20}0{Enter}OBSERVACAO PARA CFOP 2403{Enter 5}
         }
     Return
 
 ;Alterar valor da observação
     F4::
-        if (FlagEstado == 0) {
-            if (ok:=FindText(X, Y, 359-150000, 653-150000, 359+150000, 653+150000, 0, 0, C197)) {
-                FindText().Click(X, Y+100, "L")
+        If (FlagEstado == 0) {
+            if ClickOnImage(C197, 0, 100, "L", "C197", X, Y) {
+                Send,{Click 2}{Sleep 20}{Tab 2}1403{Enter 9}{Sleep 20}
+                FindText().Click(X, Y+90, "L")
+                Send,{Click 2}{Sleep 20}{Tab 2}1403{Tab 6}0{Enter}+{Tab}
             }
-            Send,{Click 2}{Sleep 20}{Tab 2}1403{Enter 9}{Sleep 20}
-            FindText().Click(X, Y+90, "L")
-            Send,{Click 2}{Sleep 20}{Tab 2}1403{Tab 6}0{Enter}+{Tab}
         } Else {
-            if (ok:=FindText(X, Y, 359-150000, 653-150000, 359+150000, 653+150000, 0, 0, C197)) {
+            if ClickOnImage(C197, 0, 100, "L", "C197", X, Y) {
                 FindText().Click(X, Y+100, "L")
+                Send,{Click 2}{Sleep 20}{Tab 2}2403{Enter 9}{Sleep 20}
+                FindText().Click(X, Y+90, "L")
+                Send,{Click 2}{Sleep 20}{Tab 2}2403{Tab 6}0{Enter}+{Tab}
             }
-            Send,{Click 2}{Sleep 20}{Tab 2}2403{Enter 9}{Sleep 20}
-            FindText().Click(X, Y+90, "L")
-            Send,{Click 2}{Sleep 20}{Tab 2}2403{Tab 6}0{Enter}+{Tab}            
         }
     Return
 
@@ -374,56 +371,44 @@ FlagEstado := 0
         ;Pesquisar a nota com erro apontada pelo relatorio
             NumpadMult::
                 Send,{Click 924 17}{Sleep 20}{Click 179 199}{Sleep 20}{Tab 9}{Sleep 40}{Enter}{Sleep 20}{Tab 7}{Sleep 20}^c{Sleep 20}{Click 924 17}{Sleep 20}{Click 1236 229}{Sleep 20}{Click 306 266}{Sleep 20}{Down 5}{Sleep 20}{Click 444 269}{Sleep 20}{Down 2}{Sleep 20}{Enter}{Sleep 20}{Tab}{Sleep 20}^v{Sleep 20}{Tab}{Sleep 20}{Enter}{Sleep 20}{Tab 5}{Down}{Sleep 20}{PrintScreen}{Sleep 20}
-                If WinExist("Paint") {
-                    WinActivate
+                If ExistActivate("Paint") {
                     Send,^v{Sleep 20}{AltDown}{Tab}{AltUp}
-                } Else {
-                    MsgBox,48, Aviso, A janela "Paint" não foi encontrada.,1
                 }
             Return
 
 ;Da inicio ao lançamento de uma nota do 0, a partir do numero dela na barra de pesquisa do SPED
     F5 & F6::
-        if WinExist("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração") {
-            WinActivate
-            Send, ^c{Sleep 40}
-                
-            If WinExist("Google Chrome") {
-                WinActivate ;{Sleep 40}{Click 918 409}
-                Send,^2{Sleep 40}{Click 1047 409}{Sleep 40}{Click 555 281}{Sleep 40}^v{Sleep 40}{Tab}{Sleep 40}{Right}{Sleep 40}{Tab 2}{Sleep 40}{Enter}{Sleep 80}
-
-                If WinExist("Sped Fiscal") {
-                    WinActivate
-                    Send,{Click 63 319}{Sleep 20}{Tab 7}{Sleep 20}^v{Sleep 20}{Enter}{Sleep 40}
-
-                    if WinExist("Lançamentos Fiscais") {
-                        WinActivate
-                        Send,{Sleep 40}!h{Sleep 40}^v{Sleep 40}{Enter}{Sleep 100}{Click 510 109 2}{Sleep 40}{Click Right}{Sleep 40}{Down 4}{Sleep 20}{Enter}{Sleep 40}
-
-                        If WinExist("Sped Fiscal") {
-                            WinActivate
-                            Send,{Sleep 40}{Tab 7}{Sleep 40}^v{Sleep 40}{Click 513 196}{Sleep 40}
-
-                            If WinExist("Google Chrome") {
-                                WinActivate
-                                Send,{Sleep 40}{Click 1096 745}
-                            } else {
-                                MsgBox,48, Aviso, A janela "Google Chrome" não foi encontrada.,1
+        If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração") {
+                Send, ^c{Sleep 40}
+            If ExistActivate("Google Chrome") { ;{Sleep 40}{Click 918 409}
+                    if ClickOnImage(Klaus, 0, 0, "L", "Klaus", X, Y) {
+                        Send,{Sleep 40}
+                        if ClickOnImage(Localizar, 0, 0, "L", "Localizar", X, Y) {
+                            Send,{Sleep 40}
+                            if ClickOnImage(NumNotaKlaus, 0, 0, "L", "Numero da nota - Klaus", X, Y) {
+                                Send,{Sleep 40}^v{Sleep 40}{Tab}{Sleep 40}{Right}{Sleep 40}{Tab 2}{Sleep 40}{Enter}{Sleep 80}
                             }
-                        } else {
-                            MsgBox,48, Aviso, A janela "Sped Fiscal" não foi encontrada.,1
                         }
-                    } else {
-                        MsgBox,48, Aviso, A janela "Lançamentos Fiscais" não foi encontrada.,1
                     }
-                } else {
-                    MsgBox,48, Aviso, A janela "Sped Fiscal" não foi encontrada.,1
+                If ExistActivate("Sped Fiscal") {
+                        if ClickOnImage(IconeAnalitico, 0, -60, "L", "Icone Analitico", X, Y) {
+                           Send,{Sleep 20}{Tab 7}{Sleep 20}^v{Sleep 20}{Enter}{Sleep 40} 
+                        }
+                    If ExistActivate("Lançamentos Fiscais") {
+                            Send,{Sleep 40}!h{Sleep 40}^v{Sleep 40}{Enter}{Sleep 100}
+                            if ClickOnImage(ChaveNFEG5, 0, 20, "L", "Chave NFE G5", X, Y) {
+                                Send, {Sleep 40}{Click 2}{Sleep 40}{Click Right}{Sleep 40}{Down 4}{Sleep 20}{Enter}{Sleep 40}
+                            }
+                        If ExistActivate("Sped Fiscal") {
+                                Send,{Sleep 40}{Tab 7}{Sleep 40}^v{Sleep 40}+{Tab 10}{Sleep 40}
+                            If ExistActivate("Google Chrome") {
+                                Send,{Sleep 40}
+                                ClickOnImage(AbrirPDFChrome, 0, 0, "L", "Abrir PDF no Chrome", X, Y)
+                            }
+                        }
+                    }
                 }
-            } else {
-                MsgBox,48, Aviso, A janela "Google Chrome" não foi encontrada.,1
-            }
-        } else {
-            MsgBox,48, Aviso, A janela "Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração" não foi encontrada.,1
+            } 
         }
     Return
 
@@ -433,25 +418,22 @@ FlagEstado := 0
     ;Return
 
 ;Esquema WASD, pode ser ativado ou desativado
-    #if FlagWASD == 1
-        w::
-            send,{up}
+    #If FlagWASD == 1
+
+        w::send,{up}
         Return
 
-        s::
-            if (ok:=FindText(X, Y, 5, 549, 1919, 1029, 0, 0, X)) {
-                FindText().Click(X, Y, "L")
-            }
+        s::ClickOnImage(X, 0, 0, "L", "X", X, Y)
         Return
 
-        a::Right
+        d::Right
         Return 
-        +a::Send,{Right 14}
+        +d::Send,{Right 10}
         Return
 
-        d::Left
+        a::Left
         Return
-        +d::Send,{Left 14}
+        +a::Send,{Left 10}
         Return
 
     Return
@@ -462,22 +444,21 @@ Return
 ;Comandos que só funcionam fora da janela principal de correção do SPED e a tecla original não perde a função dentro dele
 ;Pesquisar nota G5
     Home::
-        If WinExist("Lançamentos Fiscais") {
-            Send,^v{Enter}
-            WinActivate
-            Send,{Sleep 20}{Click 193 187}{Sleep 20}^{Enter}{Sleep 20}{Click 128 499}
-        } Else {
-            MsgBox,48, Aviso, A janela de Notas Fiscais do G5 não foi encontrada.,1
+        Send,^v{Enter}
+        If ExistActivate("Lançamentos Fiscais") {
+            if ClickOnImage(ItensG5, 103, 6, "L", "Itens G5", X, Y) {
+                Send,{Sleep 20}^{Enter}{Sleep 20}
+                WinWaitActive, Itens da NF
+                ClickOnImage(PrimeiroItemG5, 0, 0, "L", "Primeiro Item G5", X, Y)
+            }   
         }
     Return
 
 ;Sair da nota no G5
     End::
-        If WinExist("Itens da NF") {
-            WinActivate
-            Send,{Click 736 16}{Sleep 20}!n{Sleep 20}{Click 187 71}
-        } Else {
-            MsgBox,48, Aviso, A janela de itens do G5 não se encontra aberta.,1
+        If ExistActivate("Itens da NF") {
+            WinClose
+            Send,{Sleep 20}!n{Sleep 20}!h
         }
     Return
 
@@ -485,9 +466,7 @@ Return
 
 ;Alterar base do ICMS
     Insert::
-    if (ok:=FindText(X, Y, 952-150000, 528-150000, 952+150000, 528+150000, 0, 0, BaseCalcC170)) {
-        FindText().Click(X+125, Y-24, "L")
-    }
+        ClickOnImage(BaseCalcC170, 125, -24, "L", "Base Calc C170", X, Y)
     Return
 
 #IfWinNotActive, ahk_group SPED
@@ -495,26 +474,13 @@ Return
 
 ;Copiar itens Klaus para 1556
     Delete::
-        if WinExist(".pdf - Google Chrome") {
-            WinActivate
+        If ExistActivate(".pdf - Google Chrome") {
             Send, ^c{Sleep 40}
-
-            If WinExist("Sped Fiscal") {
-                WinActivate
+            If ExistActivate("Sped Fiscal") {
                 Send,{Right}{Sleep 20}^v{Sleep 20} -{Space}
-
-                if WinExist(".pdf - Google Chrome") {
-                    WinActivate
-                } Else {
-                    MsgBox,48, Aviso, A janela "NFE - Google Chrome" não foi encontrada.,1
-                }
-            } Else {
-                MsgBox,48, Aviso, A janela "Sped Fiscal" não foi encontrada.,1
-            }
-        } Else {
-            MsgBox,48, Aviso, A janela "NFE - Google Chrome" não foi encontrada.,1
-        }    
+                ExistActivate(".pdf - Google Chrome")
+            } 
+        }     
     Return
 
 Return      
-                       
