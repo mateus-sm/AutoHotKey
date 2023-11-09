@@ -27,8 +27,8 @@ OBS:="|<OBS>*142$104.000000000000000000w4180001000000200E20E0000E000000M08004000
 BaseCalcC170:="|<BaseCalcC170>*137$138.0000000000000000000000000000000100000000000000D0000400040100E0HW4Q1nw8U000400040100E0KHAW28E8XbXUQQ3XYt9C1lkI3AU20EDYYYUYY4IZ59G2GEI2As3UE8Xb7kYy43Z19G2GEI2460ME8YVY0YU44Z19G2GEI2o104E8YYoUYY4IZ59G2GEKOoW28ED7bXUQQ3bYttA1lUHmIS1sE00000000000000000000000U"
 PrimeiroItemG5:="|<PrimeiroItemG5>*111$10.00020A0s3kDUz3sD0s308000002"
 Klaus:="|<Klaus>*176$29.00000XE001AU002F00072SFCA44WEI8t4UYGG8l4gYEGBD7b00000E"
-Localizar:="|<Localizar>*184$19.0000001kC0U1Uk0EM088064037zzXbxlVgMkqADny3ky0004"
-NumNotaKlaus:="|<NumNotaKlaus>*195$36.000000000000000010000010C483VQPY86tyEY8492kY8A12kY8A12EYM412NaM6N2D3s3l2000000000000U"
+Localizar:="|<Localizar>*184$19.0000001kC0U1Uk0EM088064037zzXbxlVgMkqADny3ky0004|<Localizar2>*180$19.0000001sD0U0UE0EM0A8064013zzVbwkVg8MqADly3kS0004"
+NumNotaKlaus:="|<NumNotaKlaus>*195$36.000000000000000010000010C483VQPY86tyEY8492kY8A12kY8A12EYM412NaM6N2D3s3l2000000000000U|<NumNotaKlaus2>*195$37.00000000000E0000080MEU75kn8E6ngEY869W8O420VAB210EW4V0k8FaNU8Y8S7k7m4000000U"
 ChaveNFEG5:="|<ChaveNFEG5>*120$70.000000000000wU00049w01D4+0000MY0052E80001WE00I10gQWQ59072E438++8IbUW90E8bZDV+EPt410WWIU4N084E4++8W8FY0WV2D8bW712E1m3k000000000008"
 AbrirPDFChrome:="|<AbrirPDFChrome>*130$22.0000zwU3zn0DzC0zww3znsDzDkzw03zs0Dzzkzbz3yDwDszkzbz3yDwDszkz8D3w0QDVVkwTz3XzwCTzkzzz3zzwU"
 ItensG5:="|<ItensG5>*131$17.000E00Y01802NmYYK9DcGEEYWV4t0000000000003s0MA1DY4eY+ycfCdRzGjvZzz+zi+ysGfkHz0Nw0DU000001"
@@ -379,33 +379,33 @@ FlagEstado := 0
 ;Da inicio ao lançamento de uma nota do 0, a partir do numero dela na barra de pesquisa do SPED
     F5 & F6::
         If ExistActivate("Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração") {
-                Send, ^c{Sleep 40}
+            Send, ^c{Sleep 40}
             If ExistActivate("Google Chrome") { ;{Sleep 40}{Click 918 409}
-                    if ClickOnImage(Klaus, 0, 0, "L", "Klaus", X, Y) {
+                if ClickOnImage(Klaus, 0, 0, "L", "Klaus", X, Y) {
+                    Send,{Sleep 40}
+                    if ClickOnImage(Localizar, 0, 0, "L", "Localizar", X, Y) {
                         Send,{Sleep 40}
-                        if ClickOnImage(Localizar, 0, 0, "L", "Localizar", X, Y) {
-                            Send,{Sleep 40}
-                            if ClickOnImage(NumNotaKlaus, 0, 0, "L", "Numero da nota - Klaus", X, Y) {
-                                Send,{Sleep 40}^v{Sleep 40}{Tab}{Sleep 40}{Right}{Sleep 40}{Tab 2}{Sleep 40}{Enter}{Sleep 80}
+                        if ClickOnImage(NumNotaKlaus, 0, 0, "L", "Numero da nota - Klaus", X, Y) {
+                            Send,{Sleep 40}^v{Sleep 40}{Tab}{Sleep 40}{Right}{Sleep 40}{Tab 2}{Sleep 40}{Enter}{Sleep 80}
+                            If ExistActivate("Sped Fiscal") {
+                                if ClickOnImage(IconeAnalitico, 0, -60, "L", "Icone Analitico", X, Y) {
+                                    Send,{Sleep 20}{Tab 7}{Sleep 20}^v{Sleep 20}{Enter}{Sleep 40}
+                                    If ExistActivate("Lançamentos Fiscais") {
+                                        Send,{Sleep 40}!h{Sleep 40}^v{Sleep 40}{Enter}{Sleep 100}
+                                        if ClickOnImage(ChaveNFEG5, 0, 20, "L", "Chave NFE G5", X, Y) {
+                                            Send, {Sleep 40}{Click 2}{Sleep 40}{Click Right}{Sleep 40}{Down 4}{Sleep 20}{Enter}{Sleep 40}
+                                            If ExistActivate("Sped Fiscal") {
+                                                Send,{Sleep 40}{Tab 7}{Sleep 40}^v{Sleep 40}+{Tab 10}{Sleep 40}
+                                                If ExistActivate("Google Chrome") {
+                                                    Send,{Sleep 40}
+                                                    ClickOnImage(AbrirPDFChrome, 0, 0, "L", "Abrir PDF no Chrome", X, Y)
+                                                }
+                                            }
+                                        }
+                                    } 
+                                }
                             }
-                        }
-                    }
-                If ExistActivate("Sped Fiscal") {
-                        if ClickOnImage(IconeAnalitico, 0, -60, "L", "Icone Analitico", X, Y) {
-                           Send,{Sleep 20}{Tab 7}{Sleep 20}^v{Sleep 20}{Enter}{Sleep 40} 
-                        }
-                    If ExistActivate("Lançamentos Fiscais") {
-                            Send,{Sleep 40}!h{Sleep 40}^v{Sleep 40}{Enter}{Sleep 100}
-                            if ClickOnImage(ChaveNFEG5, 0, 20, "L", "Chave NFE G5", X, Y) {
-                                Send, {Sleep 40}{Click 2}{Sleep 40}{Click Right}{Sleep 40}{Down 4}{Sleep 20}{Enter}{Sleep 40}
-                            }
-                        If ExistActivate("Sped Fiscal") {
-                                Send,{Sleep 40}{Tab 7}{Sleep 40}^v{Sleep 40}+{Tab 10}{Sleep 40}
-                            If ExistActivate("Google Chrome") {
-                                Send,{Sleep 40}
-                                ClickOnImage(AbrirPDFChrome, 0, 0, "L", "Abrir PDF no Chrome", X, Y)
-                            }
-                        }
+                        }  
                     }
                 }
             } 
