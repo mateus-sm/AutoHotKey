@@ -36,6 +36,7 @@ C197:="|<C197>*162$35.000000Aw8xyUH8l88V42aMl2814l34E2Da68U438AFa8YEMVsFsUUU0001
 C195:="|<C195>*162$35.000000Aw8wwUH8l90V42aO12814rX4E2DVa8U433AFa8YaMVsFtsUU00011U0004000000U|<C195-2>*160$35.0000004s8swUH8l90V42W+12814rU4E2DU28U4214Fa8YUEVsFlsUU00010U0004000000U"
 C170:="|<C170>*151$35.000000As9yMUH8k98V42UWF28114W4E26968U48GAFa8EYEVsEUkUU00011U0004000000U|<C170-2>*159$35.0000004s8yMUH8k98V42UWF28114U4E26928U48G4Fa8EYEVsEUkUU00010U0004000000U"
 C190:="|<C190>*160$34.000000HUXVW2N6994F0cWYF40WOE4E2Dd2F084Y96MWGF4D2C6480000EE0002000000U|<C1902>*143$35.0000004s8sMUH8l98V42W+F2814oU4E2Dd28U42G4Fa8YYEVsFkkUU00011U0004000000U"
+C195:="|<C195>*162$35.000000Aw8wwUH8l90V42aO12814rX4E2DVa8U433AFa8YaMVsFtsUU00011U0004000000U"
 
 ;Funçoes
 ClickOnImage(image, xOffset, yOffset, mouseClick, label, ByRef X, ByRef Y) {
@@ -436,6 +437,30 @@ FlagEstado := 0
         +a::Send,{Left 10}
         Return
 
+    Return
+
+    F9::
+        if (FlagEstado == "") {
+            ; Entrada dentro do estado
+            if ClickOnImage(C195, 0, 0, "L", "C195", X, Y) {
+                Send,{Click 2}{Sleep 20}{Tab 6}{Sleep 40}{Enter 2}{Sleep 40}OBSERVACAO PARA CFOP 1403{Sleep 40}{Enter 3}{Sleep 40}!s{Sleep 40}{Tab 9}{Sleep 40}{Enter}{Sleep 40}SP90090278{Sleep 40}{Enter 2}{Sleep 40}1403{Sleep 40}{Enter 6}
+            }
+        } else {
+            ; Entrada fora do estado
+            if ClickOnImage(C195, 0, 0, "L", "C195", X, Y) {
+                Send,{Click 2}{Sleep 20}{Tab 6}{Sleep 40}{Enter 2}{Sleep 40}OBSERVACAO PARA CFOP 2403{Sleep 40}{Enter 3}{Sleep 40}!s{Sleep 40}{Tab 9}{Sleep 40}{Enter}{Sleep 40}SP90090278{Sleep 40}{Enter 2}{Sleep 40}2403{Sleep 40}{Enter 6}
+            }
+        }
+    Return
+
+    F10::
+        if (FlagEstado == "") {
+            ; Entrada dentro do estado
+            Send,{Insert}{Sleep 40}SP90090104{Sleep 40}{Enter 2}{Sleep 40}1403{Sleep 40}{Enter 7}  
+        } else {
+            ; Entrada fora do estado
+            Send,{Insert}{Sleep 40}SP90090104{Sleep 40}{Enter 2}{Sleep 40}2403{Sleep 40}{Enter 7}
+        }
     Return
 
 Return
