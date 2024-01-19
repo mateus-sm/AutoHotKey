@@ -1,39 +1,126 @@
 ﻿#SingleInstance Force
+#Include %A_ScriptDir%\Lib\FindText.ahk
+#Include %A_ScriptDir%\Lib\matFunctions.ahk
+Menu, Tray, Icon, Shell32.dll, 44
 GroupAdd, SPED, REGISTRO - C170 - ENTRADA - Itens
+
+;Label para usar timer na notificação das flags
+    RemoveToolTip:
+    ToolTip
+    return
+
+;Ativa e desativa flag de estado -> FlagEstado
+    +2::
+        if (FlagEstado == "") {
+            FlagEstado := 1
+            ToolTip, CFOP fora do estado, 1115, 972
+            SetTimer, RemoveToolTip, -3000 
+        } Else {
+            FlagEstado := ""
+            ToolTip, CFOP dentro do estado, 1115, 972
+            SetTimer, RemoveToolTip, -3000
+        }
+    return
 
 #IfWinActive ahk_group SPED
 
 ;1949
     ;Lançar 090 1949
-    F7 & 4::Send,{PgUp}{Click 551 207}ENTRADA ESTADUAL{Sleep 20}{Tab 2}090{Enter 2}1949{Enter 2}UNI{Enter 3}0{Enter 4}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
-    ;Substituir item por 090 1949
-    F8 & 4::Send,{PgUp}{Click 333 231}{Sleep 20}0{Enter 2}0{Enter 10}0{Enter}0{Enter}0{Enter}0{Enter}+{Tab 16}090{Enter 2}1949{Enter 7}!s{Sleep 20}{Tab}{Enter}{Sleep 20}{Down}
+    Alt & Numpad4::
+        if (FlagEstado == "") {
+            lancar("ENTRADA ESTADUAL", "090", "1949", "UN")
+        } Else {
+            lancar("ENTRADA INTERESTADUAL", "090", "2949", "UN")
+        }
+    Return
+    ;Substituir por 090 1949
+    Ctrl & Numpad4::
+        if (FlagEstado == "") {
+            substituir("090", "1949")
+        } Else {
+            substituir("090", "2949")
+        }
+    Return
 
 ;1556
     ;Lançar 090 1556
-    F7 & 5::Send,{PgUp}{Click 551 207}ENTRADA ESTADUAL{Sleep 20}{Tab 2}090{Enter 2}1556{Enter 2}UNI{Enter 3}0{Enter 4}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
+    Alt & Numpad5::
+        if (FlagEstado == "") {
+            lancar("ENTRADA ESTADUAL", "090", "1556", "UNI")
+        } Else {
+            lancar("ENTRADA INTERESTADUAL", "090", "2556", "UNI")
+        }
+    Return
     ;Substituir item por 090 1556
-    F8 & 5::Send,{PgUp}{Click 333 231}{Sleep 20}0{Enter 2}0{Enter 10}0{Enter}0{Enter}0{Enter}0{Enter}+{Tab 16}090{Enter 2}1556{Enter 7}!s{Sleep 20}{Tab}{Enter}{Sleep 20}{Down}
+    Ctrl & Numpad5::
+        if (FlagEstado == "") {
+            substituir("090", "1556")
+        } Else {
+            substituir("090", "2556")
+        }
+    Return
 
 ;1653
     ;Lançar 090 1653
-    F7 & 3::Send,{PgUp}{Click 305 210}{Sleep 20}{Enter 3}090{Enter 2}1653{Enter 2}LTS{Enter 3}0{Enter 4}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
+    Alt & Numpad3::
+        if (FlagEstado == "") {
+            lancar("ENTRADA ESTADUAL", "090", "1653", "LTS")
+        } Else {
+            lancar("ENTRADA INTERESTADUAL", "090", "2653", "LTS")
+        }
+    Return
 
 ;1910
     ;Lançar 090 1910
-    F7 & 9::Send,{PgUp}{Click 551 207}BONIFICACAO ESTADUAL{Sleep 20}{Tab 2}090{Enter 2}1910{Enter 2}UNI{Enter 3}0{Enter 4}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
+    Alt & Numpad9::
+        if (FlagEstado == "") {
+            lancar("BONIFICACAO ESTADUAL", "090", "1910", "UNI")
+        } Else {
+            lancar("BONIFICACAO INTERESTADUAL", "090", "2910", "UNI")
+        }
+    Return
     ;Substituir item por 090 1910
-    F8 & 9::Send,{PgUp}{Click 333 231}{Sleep 20}0{Enter 2}0{Enter 10}0{Enter}0{Enter}0{Enter}0{Enter}+{Tab 16}090{Enter 2}1910{Enter 7}!s{Sleep 20}{Tab}{Enter}{Sleep 20}{Down}
+    Ctrl & Numpad9::
+        if (FlagEstado == "") {
+            substituir("090", "1910")
+        } Else {
+            substituir("090", "2910")
+        }
+    Return
 
     ;Lançar 000 1910
-    F7 & 0::Send,{PgUp}{Click 551 207}BONIFICACAO ESTADUAL{Sleep 20}{Tab 2}000{Enter 2}1910{Enter 2}UNI{Enter 3}0{Enter 4}0{Enter 4}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
+    Alt & Numpad0::
+        if (FlagEstado == "") {
+            lancar("BONIFICACAO ESTADUAL", "000", "1910", "UNI")
+        } Else {
+            lancar("BONIFICACAO INTERESTADUAL", "000", "2910", "UNI")
+        }
+    Return
     ;Substituir item por 000 1910
-    F8 & 0::Send,{PgUp}{Click 333 231}{Sleep 20}0{Enter 2}0{Enter 13}0{Enter}+{Tab 16}000{Enter 2}1910{Enter 10}
+    Ctrl & Numpad0::
+        if (FlagEstado == "") {
+            substituir("000", "1910")
+        } Else {
+            substituir("000", "2910")
+        }
+    Return
     
     ;Lançar 020 1910
-    F7 & 2::Send,{PgUp}{Click 551 207}BONIFICACAO ESTADUAL{Sleep 20}{Tab 2}020{Enter 2}1910{Enter 2}UNI{Enter 3}0{Enter 4}0{Enter 4}0{Enter}0{Enter}0{Enter 7}0{Enter}+{Tab 16}
-    ; Substituir item por 020 1910
-    F8 & 2::Send,{PgUp}{Click 333 231}{Sleep 20}0{Enter 2}0{Enter 13}0{Enter}+{Tab 16}020{Enter 2}1910{Enter 10}
+    Alt & Numpad2::
+        if (FlagEstado == "") {
+            lancar("BONIFICACAO ESTADUAL", "020", "1910", "UNI")
+        } Else {
+            lancar("BONIFICACAO INTERESTADUAL", "020", "2910", "UNI")
+        }
+    Return
+    ;Substituir item por 020 1910
+    Ctrl & Numpad2::
+        if (FlagEstado == "") {
+            substituir("020", "1910")
+        } Else {
+            substituir("020", "2910")
+        }
+    Return
 /*
 Codigo de comando 1910/1949/1556/1653
  F7 Para lançar o codigo
