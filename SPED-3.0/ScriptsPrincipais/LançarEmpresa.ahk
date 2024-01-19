@@ -1,17 +1,45 @@
 ﻿#SingleInstance Force
-GroupAdd, PARTICIPANTE, REGISTRO - 0150 - ENTRADA - Participante
-GroupAdd, ITEM, REGISTRO - 0200 - ENTRADA - Item/Produtos
+#Include %A_ScriptDir%\Lib\matFunctions.ahk
+Menu, Tray, Icon, Shell32.dll, 26
 
-SetTitleMatchMode, 2
+GroupAdd, PESQUISAR, Pesquisar Dados Cadastrais
 
-#IfWinActive ahk_group PARTICIPANTE
+SetTitleMatchMode 2
+
+#IfWinActive ahk_group PESQUISAR
+
+;LANÇAR EMPRESAS
+    +e::
+        InputBox, NomeEmpresa, Nome da empresa a criar, Digite o nome da empresa:, , 300, 130
+        if (ErrorLevel == 0) {
+            switch NomeEmpresa {
+                case "Nome": CriarEmpresa("Nome", "CNPJ", "InscriçãoEstadual", "CodigoMunicipio", "Logradouro", "Numero", "Complemento", "Bairro")
+
+                case "Nome": CriarEmpresa("Nome", "CNPJ", "InscriçãoEstadual", "CodigoMunicipio", "Logradouro", "Numero", "Complemento", "Bairro")
+            }
+        }
+    Return
+
 ;Modelo de cadastro
-    0 & X::
-    Send,CodigoParticipante{Sleep 20}{Enter}{Sleep 20}Nome{Sleep 20}{Enter}{Sleep 20}CNPJ{Sleep 20}{Tab 2}{Sleep 20}InscriçãoEstadual{Sleep 20}{Tab 3}{Sleep 20}CodigoMunicipio{Sleep 40}{Tab 3}{Sleep 20}Logradouro{Sleep 20}{Enter}{Sleep 20}Numero{Sleep 20}{Enter}{Sleep 20}Complemento{Sleep 20}{Enter}{Sleep 20}Bairro{Enter}
-    return
+;case "Nome": CriarEmpresa("Nome", "CNPJ", "InscriçãoEstadual", "CodigoMunicipio", "Logradouro", "Numero", "Complemento", "Bairro")
 
-#IfWinActive ahk_group ITEM
-;Modelo de cadastro
-    0 & x::
-    Send,CodigoItens{Sleep 20}{Enter}{Sleep 20}Nome{Sleep 20}{Enter 4}{Sleep 20}{CtrlDown}{Enter}{CtrlUp}{Sleep 20}{Tab 5}{Sleep 20}{Enter}{Sleep 20}CodUnidade{Sleep 20}{Enter}{Sleep 20}Unidade{Sleep 20}{Enter 2}{Sleep 20}{Tab 3}{Sleep 20}{Enter}{Sleep 20}{Tab 2}{Sleep 20}TipoItem{Sleep 20}{Enter}{Sleep 20}{Tab 9}
-    return
+;LANÇAR ITENS
+    +i::
+        InputBox, NomeItem, Nome do item a criar, Digite o nome do item:, , 300, 130
+        if (ErrorLevel == 0) {
+            switch NomeItem {
+                case "COMBUSTIVEL": 
+                    if ExistActivate("Pesquisar Dados Cadastrais") {
+                        Send,{Insert}{Tab 5}{CtrlDown}{Enter}{CtrlUp}{Sleep 20}{Tab 5}{Sleep 20}{Enter}{Sleep 20}LTS{Sleep 20}{Enter}{Sleep 40}LITROS{Sleep 40}{Enter 2}{Sleep 40}{Tab 3}{Sleep 40}{Enter}{Sleep 40}{Esc}{Sleep 20}{Tab}{Enter}{Sleep 80}
+                    }
+                    CriarItem("COMBUSTIVEL", "LTS", "material de uso e consumo")
+                Return
+
+                case "MATERIAL": CriarItem("MATERIAL DE USO E CONSUMO", "UNI", "material de uso e consumo")
+
+                case "GLP": CriarItem("GLP", "KG", "material de uso e consumo")
+
+                case "SERVICO": CriarItem("SERVIÇO", "UNI", "servi")
+            }
+        }
+    Return
