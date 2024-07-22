@@ -1,5 +1,5 @@
 ﻿#SingleInstance Force
-#Include %A_ScriptDir%\Lib\matFunctions.ahk
+#Include <matFunctions>
 Menu, Tray, Icon, Shell32.dll, 26
 
 GroupAdd, PESQUISAR, Pesquisar Dados Cadastrais

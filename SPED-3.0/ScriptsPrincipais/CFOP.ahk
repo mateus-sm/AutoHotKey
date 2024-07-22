@@ -1,5 +1,5 @@
-﻿#Include %A_ScriptDir%\Lib\FindText.ahk
-#Include %A_ScriptDir%\Lib\matFunctions.ahk
+﻿#Include <FindText>
+#Include <matFunctions>
 #SingleInstance Force
 Menu, Tray, Icon, Shell32.dll, 44
 GroupAdd, SPED, REGISTRO - C170 - ENTRADA - Itens

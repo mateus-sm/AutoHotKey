@@ -1,6 +1,6 @@
 ﻿#SingleInstance Force
-#Include %A_ScriptDir%\Lib\FindText.ahk
-#Include %A_ScriptDir%\Lib\matFunctions.ahk
+#Include <FindText>
+#Include <matFunctions>
 Menu, Tray, Icon, Shell32.dll, 14
 
 GroupAdd, SPED, Sped Fiscal - EFD ICMS/IPI - Sistema Público de Escrituração Digital
